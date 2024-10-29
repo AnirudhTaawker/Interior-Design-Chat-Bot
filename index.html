@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <script src="env.js"></script>
+    <script type="module" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@openai/api@0.27.0/dist/index.js"></script>
+    <head>
+        <title>DoDecor</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="header-strip">
+            <h1>DoDecor</h1>
+        </div>
+        <div id="output-container" class="frame">
+            <div class="image-frame">
+                <img id="output-img1" src="" alt="">
+                <img id="output-img2" src="" alt="">
+                <img id="output-img3" src="" alt="">
+            </div>
+            <h2>Describe your ideal room, and watch it appear in front of you!</h2>
+        </div>
+        <div class="textarea-container">
+            <textarea id="instruction" placeholder="A room with beige walls and wooden flooring with a window on the same side as the table."></textarea>
+            <button id="submit-btn">Create</button>
+        </div>
+        <div id="feedback-container" class="frame" style="display: none;">
+            <h2>Describe the changes you want to see:</h2>
+            <textarea id="feedback" placeholder="Add more plants, change the color scheme, etc."></textarea>
+            <button id="feedback-btn">Submit Feedback</button>
+        </div>
+    </body>
+</html>
